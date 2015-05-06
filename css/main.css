@@ -1,0 +1,137 @@
+/* Preloader */
+
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#fff; /* change if the mask should have another color then white */
+    z-index:99; /* makes sure it stays on top */
+}
+
+#status {
+    width:200px;
+    height:200px;
+    position:absolute;
+    left:50%; /* centers the loading animation horizontally one the screen */
+    top:50%; /* centers the loading animation vertically one the screen */
+    background-image:url(../img/status.gif); /* path to your loading animation */
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:-100px 0 0 -100px; /* is width and height divided by two */
+}
+
+body {
+	background-color: #f8f8f8;
+	font-family: 'Maven Pro', sans-serif;
+	font-size:16px;
+	overflow: hidden;
+}
+
+h1, h2, h3, p{
+	margin:0 0 1rem 0;
+}
+ul, ol{
+	margin:0;
+}
+
+.cf:after{
+	clear:both;
+	content:'';
+	display: block;
+}
+
+.bar{
+	background-color: #f90;
+	opacity:0;
+	padding:1em;
+	position: relative;
+	width: 0;
+}
+
+.bar span{
+	color:#fff;
+	position:absolute;
+	right: 1em;
+}
+
+.block-1, .block-2, .block-3, .block-4, .block-5, .block-6
+{
+	padding:1em;
+}
+.block{
+	position: relative;
+}
+
+.block-1{
+	background-color: #333;
+	color: #f2f2f2;
+	font-size: 1.3em;
+	position: relative;
+}
+.block-3, .block-4, .block-5{
+	display: none;
+}
+.block-2{
+	background-color: #fff;
+}
+
+
+.block-3{
+	background-color: #81BEF7;
+}
+
+.block-3 .section-1, .block-3 .section-2{
+	float: left;
+	width: 50%;
+}
+
+
+.c-map{
+	height: 400px;
+}
+
+
+.indicator{
+	font-size: 1.5em;
+	transition: all ease .2s;
+}
+
+.menu{
+	text-align: center;	
+}
+
+
+.menu li{
+	display:inline;	
+}
+
+.menu li a{
+	color:#999;
+	padding:1em;
+	text-transform: uppercase;
+}
+
+.menu li a:hover{
+	color:#000;
+}
+
+.user{
+	position:absolute;
+	padding:0 1em 0 0;
+	right: 0;
+	top:2em;
+}
+
+.user img{
+	background-color:#fff;
+	border:1px solid #fff;
+	border-radius:50%;
+	position:absolute;
+	left:-56px;
+	top:-12px;
+	width: 48px;
+}
+
+
